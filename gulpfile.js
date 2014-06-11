@@ -11,6 +11,8 @@ var stripDebug = require('gulp-strip-debug');
 var uglify = require('gulp-uglify');
 var autoprefix = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-html');
+var newer = require('gulp-newer');
+
 
 //JShint Task
 gulp.task('jshint', function() {
@@ -26,6 +28,7 @@ gulp.task('imagemin', function() {
         imgDst = './build/images';
 
     return gulp.src(imgSrc)
+        .pipe(newer(imgDst))
         .pipe(changed(imgDst))
         .pipe(imagemin())
         .pipe(gulp.dest(imgDst));
