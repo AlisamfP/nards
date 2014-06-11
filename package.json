@@ -1,0 +1,38 @@
+{
+  "name": "nards",
+  "version": "0.0.1",
+  "description": "Not Another Raspbian Digital Sign",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samrocksc/nards.git"
+  },
+  "keywords": [
+    "Digital",
+    "Sign",
+    "Raspberry",
+    "Pi",
+    "Local",
+    "Business"
+  ],
+  "author": "Sam Clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samrocksc/nards/issues"
+  },
+  "homepage": "https://github.com/samrocksc/nards",
+  "devDependencies": {
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-changed": "^0.4.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-imagemin": "^0.6.1",
+    "gulp-jshint": "^1.6.2",
+    "gulp-minify-css": "^0.3.4",
+    "gulp-minify-html": "^0.1.3",
+    "gulp-strip-debug": "^0.3.0",
+    "gulp-uglify": "^0.3.0"
+  }
+}
