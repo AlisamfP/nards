@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/samrocksc/nards",
   "devDependencies": {
+    "gulp-add": "0.0.1",
     "gulp-autoprefixer": "0.0.7",
     "gulp-changed": "^0.4.0",
     "gulp-concat": "^2.2.0",

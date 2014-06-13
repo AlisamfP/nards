@@ -9,15 +9,18 @@ First off please recognize that this was built by an absolute novice.  The goal 
 **Requirements**
 * A Raspberry Pi and a TV(and HDMI cable)
 * Raspbian booting to lxde
-* node.js 
+* node.js [Raspberry Pi binary](wget http://node-arm.herokuapp.com/node_latest_armhf.deb "arm build of nodejs")
+* harp.js
 * gulp.js
+* git(hopefully a github account)
 
 **Todo**
-* modular CSS layout responsive to multiple tv screens.
+* ~Auto Refresh~
+* ~modular CSS layout responsive to multiple tv screens.~
 * JSON parsed News Rotator.
 * image slider with jquery probably.
 * config file holding variables for all applical modules of social media
-* forecast.io api based weather forecast system
+* forecast.io api based weather forecast system [forecast.io embed](http://blog.forecast.io/forecast-embeds/ "forecast io embed")
 * instagram widget
 * twitter widget
 * google calendar upcoming events widget.

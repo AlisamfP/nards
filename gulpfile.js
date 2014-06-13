@@ -12,7 +12,14 @@ var uglify = require('gulp-uglify');
 var autoprefix = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-html');
 var newer = require('gulp-newer');
+var add = require('gulp-add');
 
+//Task - gulp-add jpg files
+gulp.task('add', function() {
+    return gulp.src(['./src/images/*.jpg'])
+        .pipe(add('*.jpg', 'This is first file content'))
+        .pipe(gulp.dest('./build/images'));
+});
 
 //JShint Task
 gulp.task('jshint', function() {
