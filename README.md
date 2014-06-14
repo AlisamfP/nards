@@ -17,12 +17,15 @@ First off please recognize that this was built by an absolute novice.  The goal 
 **Todo**
 * ~Auto Refresh~
 * ~modular CSS layout responsive to multiple tv screens.~
-* JSON parsed News Rotator.
-* image slider with jquery probably.
-* config file holding variables for all applical modules of social media
+* ~JSON parsed News Rotator.~
+* ~image slider with jquery probably.~
+* ~config file holding variables for all applical modules of social media~
 * ~forecast.io api based weather forecast system [forecast.io embed](http://blog.forecast.io/forecast-embeds/ "forecast io embed")~
-* instagram widget
-* twitter widget
-* google calendar upcoming events widget.
+* ~instagram widget~
+* ~twitter widget~
+* Google Calendar upcoming events widget.
+* General news ticker
+* Business Logo Positioning
+* Change backend system to make variables available via web interface
 
 
