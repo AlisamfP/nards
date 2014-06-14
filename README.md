@@ -20,7 +20,7 @@ First off please recognize that this was built by an absolute novice.  The goal 
 * JSON parsed News Rotator.
 * image slider with jquery probably.
 * config file holding variables for all applical modules of social media
-* forecast.io api based weather forecast system [forecast.io embed](http://blog.forecast.io/forecast-embeds/ "forecast io embed")
+* ~forecast.io api based weather forecast system [forecast.io embed](http://blog.forecast.io/forecast-embeds/ "forecast io embed")~
 * instagram widget
 * twitter widget
 * google calendar upcoming events widget.

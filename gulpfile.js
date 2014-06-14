@@ -13,6 +13,23 @@ var autoprefix = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-html');
 var newer = require('gulp-newer');
 var add = require('gulp-add');
+var jsonminify = require('gulp-jsonminify');
+
+//include rimraf
+var rimraf = require('rimraf');
+//general paths
+var paths = {
+    scripts: ['./src/scripts/*.js'],
+    images: ['./src/images/**/*'],
+    styles: ['./src/styles/*.css']
+};
+
+//jsonminify minify all json and pass to build/scripts
+gulp.task('jsonminify', function() {
+    return gulp.src(['./src/scripts/*.json'])
+        .pipe(jsonminify())
+        .pipe(gulp.dest('./build/scripts'))
+});
 
 //Task - gulp-add jpg files
 gulp.task('add', function() {
@@ -55,7 +72,7 @@ gulp.task('htmlpage', function() {
 // JS concat, strip debugging and minify
 gulp.task('scripts', function() {
     return gulp.src(['./src/scripts/lib.js', './src/scripts/*.js'])
-        .pipe(concat('script.js'))
+        .pipe(concat('all.min.js'))
         .pipe(stripDebug())
         .pipe(uglify())
         .pipe(gulp.dest('./build/scripts/'));
@@ -82,8 +99,14 @@ gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles'], function() {
         gulp.run('jshint', 'scripts');
     });
 
+    //watch for JSON changes
+    gulp.watch('./src/scripts/*.json', function() {
+        gulp.run('jsonminify');
+    });
+
     // watch for CSS changes
     gulp.watch('./src/styles/*.css', function() {
         gulp.run('styles');
     });
+
 });

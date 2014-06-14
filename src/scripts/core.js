@@ -2,8 +2,12 @@
 var currentAnnouncement = 0;
 var announcementCount = 0;
 
+//load weather widget into #forecast div
+$(document).ready(function() {
+    $("#forecast").html('<iframe style="font-color: white" id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=' + lat + "&lon=" + lon + "&name=" + forecast_name + '&color=#00aaff&font=Georgia&units=uk"> </iframe>')
+});
 
-//Retrieve Announcements from JSON
+
 //Get announcements
 function getAnnouncements() {
     $.getJSON(announcementSource, function(data) {
@@ -28,7 +32,7 @@ function getAnnouncements() {
         });
     })
 }
-//load announcements into page
+//Execute Announcements
 window.setInterval(function() {
-    getAnnouncements();
-}, announcementInterval)
+    getAnnouncements()
+}, announcementInterval);

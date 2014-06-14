@@ -1,0 +1,31 @@
+{
+    "announcements": [{
+        "title": "Toddy Jars are here!",
+        "message": "Limited Quantities!  $10.00 for jar and drink of your choice, $2.50 refills on toddy and tea!",
+        "photo": ""
+    }, {
+        "title": "Summer is Here!",
+        "message": "Ask about our summer menu!",
+        "photo": ""
+    }, {
+        "title": "Mesa Art Bizarre",
+        "message": "Every 1st Sunday of the month is the Mesa Art Bizarre where all artists are welcome to show up create and display their wares!  Feel free to stop by and say hello!",
+        "photo": ""
+    }, {
+        "title": "Sci/Fantasy Group Every 2nd Sunday",
+        "message": "Brick Cave Media hosts a Sci Fi/Fantasy group every 2nd Sunday!  Come join us!",
+        "photo": ""
+    }, {
+        "title": "Try the toddy black!!",
+        "message": "We slow brew our iced coffee across 24 hours to create a smooth product without cream!  Ask a barista!",
+        "photo": ""
+    }, {
+        "title": "We open at 6:30AM during the week",
+        "message": "Stop by early on your way to work to get a cup of coffee!",
+        "photo": ""
+    }, {
+        "title": "Check Out Our Summer Menu",
+        "message": "Our summer menu is out and frappes are here!",
+        "photo": ""
+    }]
+}
