@@ -4,7 +4,7 @@ nards
 Not Another Raspbian Digital Sign
 
 ------
-First off please recognize that this was built by an absolute novice.  The goal of this project is to learn node.js and to also create a Raspbian Raspberry Pi setup that can easily create digital sign for local businesses cheaply.
+First off please recognize that this was built by an absolute novice.  The goal of this project is to learn node.js and to also create a Raspbian Raspberry Pi setup that can easily create digital sign for local businesses cheaply.  It's actually just harp server using livereload from gulp to produce a LXDE friendly interface for digital signage. 
 
 **Requirements**
 * A Raspberry Pi and a TV(and HDMI cable)
@@ -27,5 +27,6 @@ First off please recognize that this was built by an absolute novice.  The goal 
 * General news ticker
 * Business Logo Positioning
 * Change backend system to make variables available via web interface
+* Update bash file to disable screen blank, mouse, auto start scripts for default Raspbian LXDE.
 
 
