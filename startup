@@ -1,4 +1,4 @@
 #! /bin/bash
 
-gulp & harp server /home/pi/git/nards/build
+(cd /home/pi/git/nards gulp & harp server /home/pi/git/nards/build)
 

@@ -8,10 +8,13 @@
     		}
     		#announce > h1 {
             	color: black;
-                font-size: 4em;
+                font-size: 3em;
     		}
             #announce > p {
 
+            }
+            .bottom {
+                max-height: 100px;
             }
     		.row2 {
         		padding: 0em;
