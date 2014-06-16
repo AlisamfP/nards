@@ -1,4 +1,4 @@
 #! /bin/bash
 
-sleep 90
-chromium --kiosk localhost:9778 &
+sleep 30
+chromium --kiosk localhost:9000 &
