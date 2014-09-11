@@ -29,4 +29,3 @@ First off please recognize that this was built by an absolute novice.  The goal 
 * Change backend system to make variables available via web interface
 * Update bash file to disable screen blank, mouse, auto start scripts for default Raspbian LXDE.
 
-

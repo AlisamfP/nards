@@ -6,8 +6,7 @@ module.exports = function(opt){
   
   function minimize (file, encoding, callback) {
     if (file.isNull()) {
-      this.push(file);
-      return callback();
+      return callback(null, file);
     }
 
     if (file.isStream()) {
@@ -15,12 +14,12 @@ module.exports = function(opt){
     }
 
     var minimize = new Minimize(opt || {} );  
-    minimize.parse(String(file.contents), function (err, data) {
+    minimize.parse(file.contents.toString(), function (err, data) {
       if (err) return callback(new gutil.PluginError('gulp-minify-html', err));
+
       file.contents = new Buffer(data);
-      this.push(file);
-      callback();
-    }.bind(this));
+      callback(null, file);
+    });
   }
 
   return through.obj(minimize);
